@@ -1,0 +1,18 @@
+.vscode
+
+# dependencies
+node_modules
+
+# production
+dist
+
+# testing
+coverage
+
+# config
+.env
+
+# logs
+logs
+*.log
+*.log.*
