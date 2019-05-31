@@ -1,0 +1,42 @@
+{
+    "name": "jest-typescript-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
+        "test": "jest --coverage --verbose --watchAll",
+        "coverage": "jest --coverage",
+        "postinstall": "npx tsc"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "^12.0.2",
+        "tsc-watch": "^2.2.0",
+        "typescript": "^3.4.5"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.13",
+        "jest": "^24.8.0",
+        "ts-jest": "^24.0.2"
+    },
+    "jest": {
+        "verbose": true,
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ],
+        "modulePathIgnorePatterns": [
+            "dist"
+        ]
+    }
+}
